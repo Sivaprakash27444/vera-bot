@@ -4,7 +4,6 @@
   },
   "deploy": {
     "startCommand": "uvicorn server_standalone:app --host 0.0.0.0 --port $PORT",
-    "healthcheckPath": "/v1/healthz",
     "restartPolicyType": "ON_FAILURE"
   }
 }
